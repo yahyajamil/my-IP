@@ -24,7 +24,7 @@ export default class GetAPI extends Component {
     async getInfo() {
         const ip = await this.getAPI()
 
-        const response = await fetch(`http://ipwho.is/${ip}`)
+        const response = await fetch(`https://ipwho.is/${ip}`)
 
         const data = await response.json()
 
